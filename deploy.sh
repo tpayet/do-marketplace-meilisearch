@@ -28,3 +28,8 @@ EOF
 # Start MeiliSearch service
 systemctl enable meilisearch
 systemctl start meilisearch
+
+# Setup firewalls and Nginx
+ufw allow 'Nginx Full'
+ufw allow 'OpenSSH'
+ufw --force enable
